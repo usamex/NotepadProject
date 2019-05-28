@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_newest_sort"
+        android:title="Newest"/>
+    <item android:id="@+id/action_oldest_sort"
+        android:title="Oldest"/>
+    <item android:id="@+id/action_priority_asc_sort"
+    android:title="Ascending Priority"/>
+    <item android:id="@+id/action_priority_desc_sort"
+    android:title="Descending Priority"/>
+
+    <item android:id="@+id/app_bar_search"
+        android:icon="@drawable/ic_action_search"
+        app:showAsAction="always"
+        android:title="Search"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+    <item android:id="@+id/add_note"
+          android:title="Add Note"
+          app:showAsAction="always"
+          android:icon="@drawable/ic_action_add"/>
+</menu>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.notepadproject">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            android:label="All notes">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".AddNoteActivity"
+            android:label="Edit note"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".TextViewActivity"
+            android:label="View note"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".are.src.main.java.com.chinalwb.are.strategies.defaults.DefaultVideoPreviewActivity"
+            android:label="Show video"
+            android:parentActivityName=".TextViewActivity"/>
+        <receiver android:name=".AlarmReceiver">
+            <intent-filter>
+                <action android:name="com.example.intent.action.ALARM" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".NotificationService"
+            android:enabled="true">
+        </service>
+        <activity
+            android:name=".are.src.main.java.com.chinalwb.are.activities.Are_VideoPlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_are__video_player"
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name=".are.src.main.java.com.chinalwb.are.strategies.defaults.DefaultProfileActivity" />
+        <activity
+            android:name=".are.src.main.java.com.chinalwb.are.strategies.defaults.DefaultImagePreviewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_default_image_preview"
+            android:theme="@style/FullscreenTheme"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/add_file"
+        android:title="Add File"
+
+        app:showAsAction="always"
+        android:icon="@drawable/ic_action_add_file"/>
+    <item android:id="@+id/priority_high"
+        android:title="High Priority"/>
+    <item android:id="@+id/priority_medium"
+        android:title="Medium Priority"/>
+    <item android:id="@+id/priority_low"
+        android:title="Low Priority"/>
+
+</menu>
